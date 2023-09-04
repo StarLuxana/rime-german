@@ -1,0 +1,50 @@
+# Rime schema
+# encoding: utf-8
+
+schema:
+  schema_id: german
+  name: 德语输入法
+  version: '1.0'
+  author:
+    - Luxana
+  description: |
+    Rime 德语输入法
+
+engine:
+  processors:
+    - punctuator
+    - express_editor
+  segmentors:
+    - punct_segmentor
+  translators:
+    - punct_translator
+
+punctuator:
+  half_shape: &symtable
+    "y": { commit: "z" }
+    "Y": { commit: "Z"}
+    "z": { commit: "y" }
+    "Z": { commit: "Y"}
+    "[": { commit: "ü" }
+    "{": { commit: "Ü" }
+    "'": { commit: 'ä' }
+    "\"": { commit: "Ä" }
+    ";": { commit: "ö" }
+    ":": { commit: "Ö" }
+    "-": { commit: "ß" }
+    "_": { commit: "ẞ"}
+  full_shape: &symtable
+    "y": { commit: "z" }
+    "Y": { commit: "Z"}
+    "z": { commit: "y" }
+    "Z": { commit: "Y"}
+    "[": { commit: "ü" }
+    "{": { commit: "Ü" }
+    "'": { commit: 'ä' }
+    "\"": { commit: "Ä" }
+    ";": { commit: "ö" }
+    ":": { commit: "Ö" }
+    "-": { commit: "ß" }
+    "_": { commit: "ẞ"}
+
+
