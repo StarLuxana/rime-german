@@ -7,7 +7,7 @@ schema:
   version: '1.0'
   author:
     - Luxana
-  description: |
+  description:
     Rime 德语输入法
 
 engine:
